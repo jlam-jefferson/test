@@ -1,11 +1,13 @@
 package br.com.jlam;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 
 public class Local {
 	private String nome;
 	private String end;
-	private LatLng local;
-
+	private LatLng local;//endereco no mapa
+	public Marker marcador;//marcador no mapa
+//um local no servidor
 	public Local(String nome, String end,double latitude,double longitude){
 		this.nome=nome;
 		this.end=end;
@@ -25,7 +27,4 @@ public class Local {
 		return end;
 
 	}
-
-
-
 }
