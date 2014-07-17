@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="6"
+        android:minSdkVersion="9"
         android:targetSdkVersion="20" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -30,11 +30,11 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name" >
-        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        android:label="@string/app_name" android:theme="@android:style/Theme.Black.NoTitleBar">
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-        android:value="AIzaSyC1pcJliyU1Nv76-v6SR6w25ua5rxxsOWg" />   
+        android:value="AIzaSyC1pcJliyU1Nv76-v6SR6w25ua5rxxsOWg" />  
+         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
         <activity
             android:name="br.com.jlam.MainActivity"
             android:label="@string/app_name" >
